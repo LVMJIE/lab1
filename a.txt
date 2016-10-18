@@ -1,2 +1,2 @@
 this is a.txt
-a.txt said:"hi ,i'm a!   I'm not b".
+a.txt said:"hi ,i'm a!".

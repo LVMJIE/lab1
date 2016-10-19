@@ -1,2 +1,4 @@
 this is b
 b said :"hi ,i'm not a ,i'm b!".
+now x changes gor C4
+now x changes gor B2

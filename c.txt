@@ -1,2 +1,4 @@
 this is c.txt
 c.txt said:"hi ,i'm c!".
+now c changes gor C4
+now c changes gor B2

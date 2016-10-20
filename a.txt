@@ -1,4 +1,2 @@
 this is a.txt
-a.txt said:"hi ,i'm a!".
-now a changes gor C4
-now a changes gor B2
+a.txt said:"hi ,i'm a!".aaaaaa

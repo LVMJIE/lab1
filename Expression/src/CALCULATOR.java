@@ -113,6 +113,9 @@ public class CALCULATOR {
 	public static String derivative(final String input, final String str, final Term[] n) {
 		// System.out.println(input);
 		// System.out.println(str);
+		String regex2 = "!d/d[ ]*[a-zA-Z]*";
+		if(!input.matches(regex2))
+			return str;
 		String strrrr = "";
 		String strTemp = input.substring(4).trim();
 		boolean flag = false;
@@ -191,7 +194,8 @@ public class CALCULATOR {
 				// System.out.println("Simplify");
 				return "simplify";
 			}
-			regex2 = "!d/d[ ]*[a-zA-Z]*";
+			//regex2 = "!d/d[ ]*[a-zA-Z]*";
+			regex2 = "!d/d.*";
 			if (input.matches(regex2)) {
 				// System.out.println("Derivative");
 				return "Derivative";
@@ -201,7 +205,7 @@ public class CALCULATOR {
 		}
 
 		else { // expression
-			regex2 = "([ ]*-?[ ]*([1-9]\\d*\\.?\\d*|[a-zA-Z]*)[ ]*([\\+-]|[\\*]))*[ ]*(([1-9]\\d*\\.?\\d*)|[a-zA-Z]*[ ]*)";
+			regex2 = "([ ]*-?[ ]*([1-9]\\d*|[a-zA-Z]*)[ ]*([\\+-]|[\\*]))*[ ]*(([1-9]\\d*)|[a-zA-Z]*[ ]*)";
 			if (input.matches(regex2)) {
 				return "Expression";
 			} else {
